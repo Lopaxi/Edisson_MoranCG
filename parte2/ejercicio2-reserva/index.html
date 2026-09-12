@@ -1,0 +1,64 @@
+<!-- Edisson Moran -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de mesa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="reservation-page">
+        <section class="reservation-card" aria-labelledby="titulo-reserva">
+            <header>
+                <span class="tag">CASA LIMÓN</span>
+                <h1 id="titulo-reserva">Reserva tu mesa</h1>
+                <p>Una velada tranquila empieza con elegir el momento correcto.</p>
+            </header>
+
+            <form class="reservation-form" action="#" method="post">
+                <div class="row">
+                    <div class="field">
+                        <label for="fecha">Fecha *</label>
+                        <input id="fecha" name="fecha" type="date" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="hora">Hora *</label>
+                        <input id="hora" name="hora" type="time" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label for="personas">Número de personas *</label>
+                        <input id="personas" name="personas" type="number" min="1" max="12" step="1" value="2" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="ocasion">Ocasión</label>
+                        <select id="ocasion" name="ocasion">
+                            <option value="normal">Visita normal</option>
+                            <option value="cumpleanos">Cumpleaños</option>
+                            <option value="aniversario">Aniversario</option>
+                            <option value="negocios">Reunión de negocios</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" maxlength="500" rows="5" placeholder="¿Alguna preferencia o alergia que debamos conocer?"></textarea>
+                </div>
+
+                <label class="check">
+                    <input type="checkbox" name="noticias">
+                    <span>Quiero recibir novedades del restaurante.</span>
+                </label>
+
+                <button type="submit">Solicitar reserva</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

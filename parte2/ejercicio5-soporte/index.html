@@ -1,0 +1,93 @@
+<!-- Edisson Moran -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de soporte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="support-page">
+        <section class="support-card" aria-labelledby="titulo-soporte">
+            <aside>
+                <span class="mark">/\</span>
+                <h2>Centro de soporte</h2>
+                <p>Cuéntanos qué ocurre y te ayudaremos a encontrar una solución clara.</p>
+
+                <dl>
+                    <dt>Horario</dt>
+                    <dd>Lun - Vie<br>8:00 a 18:00</dd>
+
+                    <dt>Respuesta</dt>
+                    <dd>En menos de 24 horas</dd>
+                </dl>
+            </aside>
+
+            <div class="content">
+                <header>
+                    <span class="eyebrow">NUEVA SOLICITUD</span>
+                    <h1 id="titulo-soporte">¿En qué podemos ayudarte?</h1>
+                </header>
+
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="field-grid">
+                        <div class="field">
+                            <label for="nombre">Nombre *</label>
+                            <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="correo">Correo *</label>
+                            <input id="correo" name="correo" type="email" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="asunto">Asunto *</label>
+                        <input id="asunto" name="asunto" type="text" required>
+                    </div>
+
+                    <div class="field-grid">
+                        <div class="field">
+                            <label for="prioridad">Prioridad *</label>
+                            <select id="prioridad" name="prioridad" required>
+                                <option value="" selected disabled>Selecciona una prioridad</option>
+                                <option value="baja">Baja</option>
+                                <option value="media">Media</option>
+                                <option value="alta">Alta</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="categoria">Categoría</label>
+                            <select id="categoria" name="categoria">
+                                <option value="cuenta">Cuenta</option>
+                                <option value="tecnico">Problema técnico</option>
+                                <option value="facturacion">Facturación</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="detalle">Describe el problema *</label>
+                        <textarea id="detalle" name="detalle" rows="6" maxlength="1200" placeholder="Incluye los detalles que puedan ayudarnos..." required></textarea>
+                        <small>Máximo 1200 caracteres.</small>
+                    </div>
+
+                    <div class="field">
+                        <label for="evidencia">Adjuntar evidencia</label>
+                        <input id="evidencia" name="evidencia" type="file" accept="image/*,.pdf">
+                        <small>Imágenes o PDF.</small>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit">Crear solicitud</button>
+                        <button type="reset" class="secondary">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

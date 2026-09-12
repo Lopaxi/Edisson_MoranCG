@@ -1,0 +1,152 @@
+:root {
+	--primary: #315c4c;
+	--primary-hover: #214336;
+	--primary-light: #f4f8ed;
+	--text: #24352d;
+	--muted: #607268;
+	--border: #c9d4c4;
+	--background: #fffdf8;
+	--background-soft: #fffaf0;
+	--accent: #bd7b36;
+	--radius-sm: 0;
+	--radius-md: 8px;
+	--radius-lg: 18px;
+	--shadow: 0 24px 60px rgba(49, 92, 76, .14);
+	--container: 780px;
+}
+
+* {
+	box-sizing: border-box;
+}
+html {
+	color-scheme: light;
+}
+body {
+	margin: 0;
+	color: var(--text);
+	font-family: 'Trebuchet MS', sans-serif;
+	background: radial-gradient(circle at top right, #d7e8b0 0, transparent 38%), var(--background-soft);
+}
+
+/* PAGINA Y CONTENEDOR */
+.reservation-page {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	padding: 30px 16px;
+}
+.reservation-card {
+	width: min(100%, var(--container));
+	padding: clamp(28px, 6vw, 60px);
+	background: var(--background);
+	border: 1px solid var(--border);
+	border-top: 8px solid var(--primary);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow);
+}
+
+/* ENCABEZADO */
+.tag {
+	color: var(--accent);
+	font-size: .75rem;
+	font-weight: 700;
+	letter-spacing: .2em;
+}
+h1 {
+	margin: 12px 0;
+	color: var(--primary);
+	font: 700 clamp(2.4rem, 7vw, 4.8rem)/.95 Georgia, serif;
+}
+header p {
+	max-width: 530px;
+	margin: 0 0 34px;
+	color: var(--muted);
+	line-height: 1.6;
+}
+
+/* FORMULARIO Y CAMPOS */
+.reservation-form {
+	display: grid;
+	gap: 20px;
+}
+.row {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px;
+}
+.field {
+	display: grid;
+	gap: 8px;
+}
+label {
+	color: var(--text);
+	font-size: .88rem;
+	font-weight: 700;
+}
+
+/* CONTROLES Y FOCO */
+input,
+select,
+textarea {
+	width: 100%;
+	padding: 13px;
+	border: 1px solid var(--border);
+	border-radius: var(--radius-sm);
+	background: var(--background);
+	color: var(--text);
+	font: inherit;
+	outline: none;
+	transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+textarea {
+	resize: vertical;
+}
+input:focus,
+select:focus,
+textarea:focus {
+	border-color: var(--accent);
+	box-shadow: 0 0 0 4px rgba(189, 123, 54, .16);
+}
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+	outline: 3px solid rgba(189, 123, 54, .3);
+	outline-offset: 2px;
+}
+.check {
+	display: flex;
+	gap: 9px;
+	align-items: flex-start;
+	font-weight: 400;
+}
+.check input {
+	width: auto;
+	accent-color: var(--primary);
+}
+
+/* BOTONES */
+button {
+	justify-self: start;
+	padding: 14px 22px;
+	border: 1px solid var(--primary);
+	border-radius: var(--radius-sm);
+	background: var(--primary);
+	color: white;
+	font: 700 .9rem inherit;
+	cursor: pointer;
+	transition: background-color 160ms ease;
+}
+button:hover {
+	background: var(--primary-hover);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+	.row {
+		grid-template-columns: 1fr;
+	}
+	button {
+		width: 100%;
+	}
+}

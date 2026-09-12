@@ -1,0 +1,56 @@
+<!-- Edisson Moran -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de cuenta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="panel" aria-labelledby="titulo-registro">
+            <header class="intro">
+                <span class="eyebrow">NUEVO PERFIL</span>
+                <h1 id="titulo-registro">Crea tu cuenta</h1>
+                <p>Regístrate para guardar tus preferencias y recibir novedades.</p>
+            </header>
+
+            <form class="form" action="#" method="post">
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="nombre">Nombre *</label>
+                        <input id="nombre" name="nombre" type="text" autocomplete="given-name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="apellido">Apellido *</label>
+                        <input id="apellido" name="apellido" type="text" autocomplete="family-name" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="correo">Correo electrónico *</label>
+                    <input id="correo" name="correo" type="email" autocomplete="email" placeholder="tu@correo.com" required>
+                </div>
+
+                <div class="field">
+                    <label for="clave">Contraseña *</label>
+                    <input id="clave" name="clave" type="password" minlength="8" autocomplete="new-password" aria-describedby="clave-ayuda" required>
+                    <small id="clave-ayuda">Mínimo 8 caracteres.</small>
+                </div>
+
+                <label class="check">
+                    <input type="checkbox" name="terminos" required>
+                    <span>Acepto los términos y condiciones.</span>
+                </label>
+
+                <div class="actions">
+                    <button type="submit">Crear cuenta</button>
+                    <button type="reset" class="ghost">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!-- Edisson Moran -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de experiencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="survey-wrap">
+        <section class="survey-card" aria-labelledby="titulo-encuesta">
+            <header>
+                <span class="number">? / 10</span>
+                <h1 id="titulo-encuesta">Cuéntanos tu experiencia</h1>
+                <p>Tus respuestas nos ayudan a diseñar una mejor visita.</p>
+            </header>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>¿Cómo valorarías la experiencia general? *</legend>
+                    <div class="choices">
+                        <label>
+                            <input type="radio" name="valoracion" value="excelente" required>
+                            Excelente
+                        </label>
+                        <label>
+                            <input type="radio" name="valoracion" value="buena">
+                            Buena
+                        </label>
+                        <label>
+                            <input type="radio" name="valoracion" value="regular">
+                            Regular
+                        </label>
+                        <label>
+                            <input type="radio" name="valoracion" value="mala">
+                            Mala
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Qué disfrutaste más?</legend>
+                    <div class="choices">
+                        <label>
+                            <input type="checkbox" name="favoritos" value="atencion">
+                            Atención
+                        </label>
+                        <label>
+                            <input type="checkbox" name="favoritos" value="ambiente">
+                            Ambiente
+                        </label>
+                        <label>
+                            <input type="checkbox" name="favoritos" value="producto">
+                            Producto
+                        </label>
+                        <label>
+                            <input type="checkbox" name="favoritos" value="rapidez">
+                            Rapidez
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="field">
+                    <label for="recomendacion">¿Qué tan probable es que nos recomiendes?</label>
+                    <input id="recomendacion" name="recomendacion" type="range" min="0" max="10" value="8">
+                    <div class="range-labels">
+                        <span>0 - Nada probable</span>
+                        <span>10 - Muy probable</span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="comentario">Una última opinión</label>
+                    <textarea id="comentario" name="comentario" rows="4" maxlength="600" placeholder="Escribe aquí tus comentarios..."></textarea>
+                </div>
+
+                <button type="submit">Enviar respuestas</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!-- Edisson Moran -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud laboral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="career-page">
+        <section class="career-card" aria-labelledby="titulo-empleo">
+            <header>
+                <span class="label">TALENTO / 2026</span>
+                <h1 id="titulo-empleo">Trabaja con nosotros</h1>
+                <p>Buscamos personas curiosas, responsables y listas para construir algo útil.</p>
+            </header>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="nombre">Nombre completo *</label>
+                        <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Correo *</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                </div>
+
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="cargo">Cargo de interés *</label>
+                        <select id="cargo" name="cargo" required>
+                            <option value="" selected disabled>Selecciona un cargo</option>
+                            <option value="diseno">Diseño UX/UI</option>
+                            <option value="desarrollo">Desarrollo web</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="soporte">Soporte</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="modalidad">Modalidad preferida</label>
+                        <select id="modalidad" name="modalidad">
+                            <option value="hibrida">Híbrida</option>
+                            <option value="remota">Remota</option>
+                            <option value="presencial">Presencial</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="portafolio">Portafolio o sitio web</label>
+                    <input id="portafolio" name="portafolio" type="url" placeholder="https://tusitio.com">
+                </div>
+
+                <div class="upload">
+                    <label for="cv">Adjunta tu CV *</label>
+                    <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx" required>
+                    <small>PDF, DOC o DOCX. Máximo sugerido: 5 MB.</small>
+                </div>
+
+                <div class="field">
+                    <label for="motivacion">Cuéntanos por qué quieres unirte</label>
+                    <textarea id="motivacion" name="motivacion" rows="5" maxlength="900" placeholder="Escribe una breve presentación..."></textarea>
+                </div>
+
+                <label class="check">
+                    <input type="checkbox" name="privacidad" required>
+                    <span>Autorizo el tratamiento de mis datos para este proceso.</span>
+                </label>
+
+                <button type="submit">Enviar candidatura</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
