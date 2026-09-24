@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realizar pedido | Vitalia Suplementos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="order-page">
+    <header class="header">
+      <div class="container header-container">
+        <a class="brand" href="index.html" aria-label="Vitalia, inicio"
+          ><span class="brand-mark">V</span
+          ><span class="brand-name">Vitalia<span>Suplementos</span></span></a
+        >
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="index.html#productos">Productos</a
+          ><a href="index.html#beneficios">Beneficios</a
+          ><a href="index.html#contacto">Contacto</a
+          ><a class="nav-cta" href="comprar.html">Comprar ahora</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="order-main">
+      <div class="container order-layout">
+        <div class="order-intro">
+          <span class="section-label">TU PEDIDO</span>
+          <h1>Empieza a cuidar tu rutina.</h1>
+          <p>
+            Completa tus datos y cuéntanos qué necesitas. Te contactaremos para
+            confirmar disponibilidad, envío y forma de pago.
+          </p>
+          <a class="back-link" href="index.html">← Volver a la tienda</a>
+          <div class="order-aside">
+            <strong>Compra con tranquilidad</strong
+            ><span>Atención personalizada</span><span>Entrega segura</span
+            ><span>Productos seleccionados</span>
+          </div>
+        </div>
+
+        <form class="order-form" action="#confirmacion" method="post">
+          <div class="form-section">
+            <h2>Información personal</h2>
+            <div class="form-grid">
+              <label
+                >Nombre completo<input
+                  type="text"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required /></label
+              ><label
+                >Correo electrónico<input
+                  type="email"
+                  name="correo"
+                  placeholder="tu@email.com"
+                  required /></label
+              ><label
+                >Teléfono<input
+                  type="tel"
+                  name="telefono"
+                  placeholder="300 000 0000"
+                  required /></label
+              ><label
+                >Ciudad<input
+                  type="text"
+                  name="ciudad"
+                  placeholder="Tu ciudad"
+                  required
+              /></label>
+            </div>
+          </div>
+          <div class="form-section">
+            <h2>Detalles del pedido</h2>
+            <div class="form-grid">
+              <label
+                >Producto<select name="producto" required>
+                  <option value="">Selecciona un producto</option>
+                  <option>Proteína Whey - $89.900</option>
+                  <option>Multivitamínico - $54.900</option>
+                  <option>Omega 3 - $64.900</option>
+                </select></label
+              ><label
+                >Cantidad<input
+                  type="number"
+                  name="cantidad"
+                  min="1"
+                  max="20"
+                  value="1"
+                  required /></label
+              ><label class="full-width"
+                >Dirección de entrega<input
+                  type="text"
+                  name="direccion"
+                  placeholder="Calle, número, barrio y apartamento"
+                  required /></label
+              ><label class="full-width"
+                >Mensaje adicional<textarea
+                  name="mensaje"
+                  rows="4"
+                  placeholder="¿Hay alguna indicación para tu pedido?"
+                ></textarea>
+              </label>
+            </div>
+          </div>
+          <label class="check-label"
+            ><input type="checkbox" name="terminos" required /> Acepto que
+            Vitalia me contacte para confirmar mi pedido.</label
+          >
+          <button class="button button-primary form-submit" type="submit">
+            Enviar solicitud de compra
+          </button>
+          <p class="form-note" id="confirmacion">
+            Al enviar, recibirás la confirmación de tu pedido por correo o
+            teléfono.
+          </p>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-content">
+        <span>© 2026 Vitalia Suplementos</span
+        ><a href="index.html">Volver al inicio</a>
+      </div>
+    </footer>
+  </body>
+</html>
