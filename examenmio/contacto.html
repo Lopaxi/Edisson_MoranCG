@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | SaludVida Hospital</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="order-page">
+    <header class:"header">
+      <div class="container header-container">
+        <a class="brand" href="index.html" aria-label="Hospital, inicio"><span class="brand-logo"><img class="brand-logo"
+              src="img/logos/logo-saludvida-header.png" </span></a>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#index">Inicio</a>
+          <a href="#nosotros">Noticias</a>
+          <a href="#estandares">Servicios</a>
+          <a href="#contacto">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+          <a><img class="search-logo" src="icons/search-svgrepo-com.svg"></a>
+        </nav>
+      </div>
+    
+    </header>
+
+    <main class="order-main">
+      <div class="container order-layout">
+        <div class="order-intro">
+          <span class="section-label">Contactanos</span>
+          <h1>Empieza a cuidarte.</h1>
+          <p>
+            Completa tus datos y cuéntanos qué necesitas. 
+          </p>
+          <a class="back-link" href="index.html">← Volver</a>
+          <div class="order-aside">
+            <strong> Envio Seguro</strong
+            ><span>Atención personalizada</span><span> Personal calificado</span
+            ><span>PQRS</span>
+          </div>
+        </div>
+
+        <form class="order-form" action="#confirmacion" method="post">
+          <div class="form-section">
+            <h2>Información personal</h2>
+            <div class="form-grid">
+              <label
+                >Nombre completo<input
+                  type="text"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required /></label
+              ><label
+                >Correo electrónico<input
+                  type="email"
+                  name="correo"
+                  placeholder="tu@email.com"
+                  required /></label
+              ><label
+                >Teléfono<input
+                  type="tel"
+                  name="telefono"
+                  placeholder="300 000 0000"
+                  required /></label
+              ><label
+                >Ciudad<input
+                  type="text"
+                  name="ciudad"
+                  placeholder="Tu ciudad"
+                  required
+              /></label>
+            </div>
+          </div>
+          <div class="form-section">
+            <h2>Detalles</h2>
+            <div class="form-grid">
+              <label
+                >Producto<select name="producto" required>
+                  <option value="">Selecciona un producto</option>
+                  <option>Asesoria</option>
+                  <option>Citas</option>
+                  <option>Medicamentos</option>
+                </select></label
+              ><label
+                >Cantidad<input
+                  type="number"
+                  name="cantidad"
+                  min="1"
+                  max="20"
+                  value="1"
+                  required /></label
+              ><label class="full-width"
+                >Dirección<input
+                  type="text"
+                  name="direccion"
+                  placeholder="Calle, número, barrio y apartamento"
+                  required /></label
+              ><label class="full-width"
+                >Mensaje adicional<textarea
+                  name="mensaje"
+                  rows="4"
+                  placeholder="¿Hay alguna indicación para tu pedido?"
+                ></textarea>
+              </label>
+            </div>
+          </div>
+          <label class="check-label"
+            ><input type="checkbox" name="terminos" required /> Acepto que
+           me contacte para confirmar.</label
+          >
+          <button class="button button-primary form-submit" type="submit">
+            Enviar 
+          </button>
+          <p class="form-note" id="confirmacion">
+            Al enviar, recibirás la confirmación
+          </p>
+        </form>
+      </div>
+    </main>
+    <footer class="footer" id="contacto">
+      <div class="container footer-grid">
+        <img class="logo-footer" src="img/logos/logo-saludvida-footer.png" <section>
+        <h3>Navegacion</h3>
+        <nav class="nav-column" aria-label="Navegación principal">
+          <a href="#index">Inicio</a>
+          <a href="#nosotros">Noticias</a>
+          <a href="#estandares">Servicios</a>
+          <a href="#contacto">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+          </section>
+    
+          <section>
+            <h3>Síguenos</h3>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </section>
+    
+          <section>
+            <h3>Servicios</h3>
+            <p></p>
+          </section>
+      </div>
+    
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Hospital SaludVida. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
