@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-titulo: #ff4900;
+  --color-parrafo-1: #0093ff;
+  --color-parrafo-2: #c500ff;
+  --color-link: #001bff;
+  --color-link-visited: #4caf50;
+  --color-link-hover: #ff6600;
+
+  --color-thead-fondo: #000000;
+  --color-thead-texto: #ffffff;
+  --color-fila-clara: #bec1c3;
+  --color-fila-central: #045795;
+
+  --fuente-principal: Arial, sans-serif;
+  --fuente-nerko: 'Nerko One', cursive;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  margin: 20px;
+}
+
+h2 {
+  color: var(--color-titulo);
+  font-size: 2rem;
+}
+p {
+  margin: 10px 0;
+}
+
+.parrafo-1 {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: var(--color-parrafo-1);
+}
+
+.parrafo-2 {
+  font-family: var(--fuente-nerko);
+  font-size: 12px;
+  color: var(--color-parrafo-2);
+}
+a {
+  color: var(--color-link);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: var(--color-thead-fondo);
+  color: var(--color-thead-texto);
+  font-size: 1.5rem;
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(2),
+tr:nth-child(4) {
+  background-color: var(--color-fila-clara);
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+tr:nth-child(3) {
+  background-color: var(--color-fila-central);
+  color: #ffffff;
+  font-size: 1.5rem;
+}
