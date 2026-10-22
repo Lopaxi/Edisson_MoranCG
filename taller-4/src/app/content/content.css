@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  flex: 1;
+}
+
+.content {
+  background-color: #70ad47;
+  color: #ffffff;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffc000;
+  padding: 15px;
+}
+
+.footer-titulo {
+  color: #ffffff;
+}
+
+.footer-1,
+.footer-2,
+.footer-3 {
+  background-color: #a6a6a6;
+  color: #ffffff;
+  padding: 20px 40px;
+}
